@@ -6,10 +6,11 @@ element.innerHTML = 'New value';
 
 //Move the image
 var img=document.getElementById('dream');
+var marginLeft=0;
 
 function moveRight()
 {
-    marginLeft = marginLeft+10;
+    marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft='px';
     
 }
