@@ -4,6 +4,7 @@ console.log('Loaded!');
 var element = document.getElementId('main-text');
 element.innerHTML='New value';
 
+//Move the image
 var img=document.getElementById('dream');
 
 function moveRight()
@@ -14,5 +15,5 @@ function moveRight()
 }
 img.onclick=function()
 {
-    var integral = setInterval(moveRight, 100);
+    var interval = setInterval(moveRight, 100);
 }
