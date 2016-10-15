@@ -6,7 +6,7 @@ element.innerHTML = 'New value';
 
 //Move the image
 var img=document.getElementById('dream');
-var marginLeft=0;
+var marginLeft= 0;
 
 function moveRight()
 {
