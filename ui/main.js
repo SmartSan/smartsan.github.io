@@ -9,7 +9,7 @@ var img=document.getElementById('dream');
 
 function moveRight()
 {
-    marginleft=marginleft+10;
+    marginLeft=marginLeft+10;
     img.style.marginLeft = marginLeft='px';
     
 }
