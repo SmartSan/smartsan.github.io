@@ -35,12 +35,7 @@ var articles={
 
 
 
-app.get('/articles/:articleName',function(req,res){
-    var articleName = req.params.articleName;
-    
-    var articleName= req.params.articleName;
-    res.send(createTemplate(articleData));
-});
+
 
 function createTemplate (data) {
     var title = data.title;
@@ -78,6 +73,16 @@ function createTemplate (data) {
     `;
     return htmlTemplate;
 }
+
+
+app.get('/articles/:articleName',function(req,res){
+    var articleName = req.params.articleName;
+    
+    var articleName= req.params.articleName;
+    res.send(createTemplate(articleData));
+});
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
