@@ -14,6 +14,34 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
+var articles={
+    'article-one':{
+        title: 'Article One | Sanjay',
+        heading: 'Article-One',
+        date: 'June 3, 2016',
+        content:
+        <p>
+        This is Article One. this is the text content intended for test.This is Article One. this is the text content intended for test.
+        </p>
+    <p>This is Article One. this is the text content intended for test.This is Article One. this is the text content intended for test.
+    </p>
+
+    <p>
+        This is Article One. this is the text content intended for test.This is Article One. this is the text content intended for test.
+    </p>
+    
+    }
+}
+
+
+
+app.get('/articles/:articleName',function(req,res){
+    var articleName = req.params.articleName;
+    
+    var articleName= req.params.articleName;
+    res.send(createTemplate(articleData));
+});
+
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
