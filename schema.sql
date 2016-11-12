@@ -1,25 +1,6 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @SmartSan
- Unwatch 6
-  Unstar 4
-  Fork 4,133 coco98/imad-2016-app
-forked from hasura-imad/imad-2016-app
- Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathimad-2016-app/schema.sql
-84b0ce7  9 days ago
-@coco98 coco98 Adds schema
-1 contributor
-RawBlameHistory     
-146 lines (102 sloc)  2.8 KB
 --
--- Name: article; Type: TABLE; Schema: public; Owner: coco98
+-- Name: article; Type: TABLE; Schema: public; Owner: smartsan
 --
-
 CREATE TABLE article (
     id integer NOT NULL,
     title text NOT NULL,
@@ -161,5 +142,3 @@ ALTER TABLE ONLY comment
 
 ALTER TABLE ONLY comment
     ADD CONSTRAINT comment_user_id_fkey FOREIGN KEY (user_id) REFERENCES "user"(id);
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
