@@ -17,7 +17,8 @@ app.get('/tes-dbt',function(req, res){
 }); 
 
 app.get('/maps', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'maps.html'));
+    
+  res.sendFile(path.join(__dirname, 'ui', 'maps.html'));//arul 
 });
 
 app.get('/voice', function (req, res) {
